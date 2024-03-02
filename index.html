@@ -6,11 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto con Javascript</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js" defer></script>
     <style>
         body {
             background-color: #f3f5fc;
-            height: 100vh;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        .estrella {
+            font-family: inherit;
+            font-weight: 500;
+            min-height: 40px;
+            color: #0a3871;
+        }
+
+        .estrella p:hover {
+            color: #082b55;
         }
 
         #texto-encriptado,
@@ -86,28 +106,57 @@
             background-color: #d8dfe8;
         }
 
+        footer {
+            height: 60px;
+            background-color: #082b55;
+            gap: 20px;
+        }
+
+        footer a {
+            color: #f3f5fc;
+            text-decoration: none;
+            transition: all .3s ease;
+        }
+
+        footer a:hover {
+            color: #d8dfe8;
+            transform: scale(1.2);
+        }
+
         @media (min-width: 0px) {
+
+            main {
+                flex-grow: 1;
+            }
 
             #texto-encriptado,
             .campo-mensaje {
                 min-height: 18vh;
             }
+
+            .estrella p {
+                font-size: 12px;
+            }
         }
 
         @media (min-width: 768px) {
             main>section {
-                height: 600px;
+                height: 55 0px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
             }
 
             #texto-encriptado {
-                min-height: 400px;
+                min-height: 350px;
             }
 
             .campo-mensaje {
                 min-height: 200px;
+            }
+
+            .estrella p {
+                font-size: 14px;
             }
         }
 
@@ -125,7 +174,7 @@
             aside {
                 top: -30px;
                 position: relative;
-                min-height: 780px;
+                min-height: 730px;
                 min-width: 432px;
                 display: flex;
                 flex-direction: column;
@@ -134,6 +183,10 @@
 
             aside img {
                 display: flex;
+            }
+
+            .estrella p {
+                font-size: 16px;
             }
         }
     </style>
@@ -149,11 +202,19 @@
             .col-xxl    Extra Extra Largo (Extra Extra Large) - Tv's            Mas de 1400px
         -->
 
-<body class="">
-    <div class="container col-12 pt-5">
+<body>
+    <div class="estrella container d-flex flex-row gap-4 text-center justify-content-center align-items-center">
+        <p class="m-0">
+            Si te gusta este proyecto, ¡una estrella en GitHub sería genial!
+        </p>
+        <iframe
+            src="https://ghbtns.com/github-btn.html?user=Marco-Silvera&repo=Proyectos-Alura&type=star&count=true&size=large"
+            frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+    </div>
+    <div class="container col-12 pt-4">
         <img class="" src="img/Logo.webp" alt="Logo Alura">
     </div>
-    <main class="container d-flex flex-column align-content-md-around flex-xl-row gap-xl-5 mt-4 px-xl-0 ">
+    <main class="container d-flex flex-column align-content-md-around flex-xl-row gap-xl-5 mt-4 px-xl-0">
         <section class="container encriptador px-0 px-xl-0">
             <textarea id="texto-encriptado" class="texto-encriptado col-12 col-md-12 bg-transparent fs-2" name="texto"
                 placeholder="Ingrese el texto aqui" autofocus></textarea>
@@ -189,6 +250,20 @@
             </button>
         </aside>
     </main>
+    <footer class="d-flex justify-content-center align-items-center text-light">
+
+
+        <a href="https://github.com/Marco-Silvera" target="_blank">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/marcosilvera/" target="_blank">
+            <i class="fa-brands fa-github fa-2xl"></i>
+        </a>
+        <p class="m-0 fst-italic">
+            Coded by Marco Silvera
+        </p>
+    </footer>
 </body>
 
 </html>
