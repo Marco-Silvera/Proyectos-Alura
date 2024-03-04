@@ -49,8 +49,6 @@ function encriptar(stringEncriptado) {
     return stringEncriptado
 }
 
-// const matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
-
 function desencriptar(stringDesencriptado) {
     for (let i = 0; i < stringDesencriptado.length; i++) {
         for (let j = 0; j < matrizCodigo.length; j++) {
