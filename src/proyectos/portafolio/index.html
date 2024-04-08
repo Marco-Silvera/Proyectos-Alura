@@ -116,7 +116,7 @@
     </section>
 
     <section id="skills" class="p-4 flex flex-col gap-2">
-        <h2 class="font-bold text-[22px]">
+        <h2 class="font-bold text-[22px] text-center">
             Skills
         </h2>
 
@@ -253,8 +253,36 @@
             </article>
         </section>
     </section>
+
+    <section id="hobbies" class="p-4 flex flex-col gap-2">
+        <h2 class="font-bold text-[22px] text-center">
+            Hobbies
+        </h2>
+
+        <section class="grid gap-4 grid-cols-2 sm:grid-cols-3 w-full justify-center">
+            <article class="h-32 p-4 bg-white flex flex-col justify-end min-w-32">
+                <img class="h-[30px] w-[30px]" src="img/cs.webp" alt="Logo CS2">
+                <h3 class="font-bold text-base">
+                    Videojuegos
+                </h3>
+            </article>
+            <article class="h-32 p-4 bg-white flex flex-col justify-end min-w-32">
+                <img class="h-[30px] w-[30px]" src="img/auriculares.webp" alt="Auriculares">
+                <h3 class="font-bold text-base">
+                    Escuchar música
+                </h3>
+            </article>
+            <article class="h-32 p-4 bg-white flex flex-col justify-end min-w-32">
+                <img class="h-[30px] w-[30px]" src="img/pelota.webp" alt="Pelota">
+                <h3 class="font-bold text-base">
+                    Futbol
+                </h3>
+            </article>
+        </section>
+    </section>
+
     <section id="formacion" class="bg-[#EAF2FD] p-8 flex  flex-col gap-8">
-        <h2 class="font-bold text-[22px]">
+        <h2 class="font-bold text-[22px] text-center">
             Formación académica
         </h2>
         <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
@@ -299,13 +327,88 @@
                     ONE Oracle - Alura Latam
                 </h3>
                 <p class="text-sm">
-                    
+
                     Enero 2024 - actualmente
                 </p>
             </article>
         </section>
-
     </section>
+
+    <section id="proyectos" class="p-8 flex  flex-col gap-8">
+        <h2 class="font-bold text-[22px] text-center">
+            Proyectos
+        </h2>
+        <section class="flex flex-col gap-16">
+            <article class="flex flex-col gap-4 min-w-[296px] max-w-[1136px]">
+                <img src="img/Proyecto-1.webp" alt="Consultoria FIEI">
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-base font-bold">
+                        Consultoria FIEI
+                    </h3>
+                    <p class="text-sm">
+                        Proyecto universitario
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="" class="text-sm text-[#2A7AE4] font-semibold p-4 border-2 border-[#2A7AE4]">
+                            Repositório
+                        </a>
+                        <a href="" class="text-sm text-white font-semibold p-4 bg-[#2A7AE4] border-2 border-[#2A7AE4]">
+                            Ver demo
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="flex flex-col gap-4">
+                <img src="img/Proyecto-2.webp" alt="Consultoria FIEI">
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-base font-bold">
+                        Consultoria FIEI
+                    </h3>
+                    <p class="text-sm">
+                        Proyecto universitario
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="" class="text-sm text-[#2A7AE4] font-semibold p-4 border-2 border-[#2A7AE4]">
+                            Repositório
+                        </a>
+                        <a href="" class="text-sm text-white font-semibold p-4 bg-[#2A7AE4] border-2 border-[#2A7AE4]">
+                            Ver demo
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </section>
+
+    <section id="contacto" class="bg-[#EAF2FD] p-8 flex  flex-col gap-8">
+        <img src="img/contacto.webp" class="hidden" alt="Telefono">
+        <div class="flex flex-col gap-8">
+            <div class="flex flex-col gap-2">
+                <h2 class="font-bold text-[22px]">
+                    Contacto
+                </h2>
+                <p class="text-base">
+                    ¿Quieres contactarme?
+                    Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.
+                </p>
+            </div>
+            <form class="flex flex-col gap-8" action="">
+                <input class="w-full p-4 outline-none border-b-2 rounded-md" type="text" placeholder="Nombre">
+                <input class="w-full p-4 outline-none border-b-2 rounded-md" type="text" placeholder="E-mail">
+                <input class="w-full p-4 outline-none border-b-2 rounded-md" type="text" placeholder="Asunto">
+                <textarea class="w-full h-36 p-4 outline-none border-b-2 rounded-md resize-none" type="text"
+                    placeholder="Mensaje"></textarea>
+                <input type="submit" class="self-start text-sm text-white font-semibold p-4 bg-[#2A7AE4] cursor-pointer"
+                    value="Enviar mensaje">
+            </form>
+        </div>
+    </section>
+
+    <footer class="p-8">
+        <p class="text-center text-base">
+            Desarrollado por Marco Silvera - 2024
+        </p>
+    </footer>
 </body>
 
 </html>
