@@ -15,7 +15,7 @@
 </head>
 
 <body class="text-[#464646] font-Raleway bg-[#F5F5F5]">
-    <header class="p-4 flex justify-between items-center">
+    <header class="p-4 md:px-8 xl:px-[152px] xl:py-8 flex justify-between items-center">
         <div class="flex items-center gap-3">
             <img src="img/estrellas-ia.webp" alt="Estrellas IA">
             <h2 class="font-semibold">
@@ -23,32 +23,32 @@
             </h2>
         </div>
         <ul class="flex gap-8">
-            <li class="hidden">
+            <li class="hidden xl:block">
                 <a href="#sobre-mi">
                     Sobre mi
                 </a>
             </li>
-            <li class="hidden">
+            <li class="hidden xl:block">
                 <a href="#skills">
                     Skills
                 </a>
             </li>
-            <li class="hidden">
+            <li class="hidden xl:block">
                 <a href="#hobbies">
                     Hobbies
                 </a>
             </li>
-            <li class="hidden">
+            <li class="hidden xl:block">
                 <a href="#formacion">
                     Formación
                 </a>
             </li>
-            <li class="hidden">
+            <li class="hidden xl:block">
                 <a href="#proyectos">
                     Proyectos
                 </a>
             </li>
-            <li class="font-normal">
+            <li class="font-normal md:font-bold">
                 <a href="mailto:msilveradev@gmail.com">
                     msilveradev@gmail.com
                 </a>
@@ -57,37 +57,40 @@
         </ul>
     </header>
 
-    <section class="p-4 flex flex-col-reverse">
+    <section class="p-4 md:p-8 flex flex-col-reverse md:flex-row xl:items-center xl:px-[152px] gap-4 md:gap-8">
         <div class="flex flex-col gap-2">
-            <h1 class="text-[22px] lg:text-[52px] font-bold p-0 m-0">
+            <h1 class="text-[22px] xl:text-[52px] font-bold p-0 m-0">
                 Marco Silvera
             </h1>
-            <p class="text-sm text-pretty">
+            <p class="text-sm md:text-base xl:text-[22px] text-pretty">
                 Estudiante de Ingeniería Informática, especializado en desarrollo web frontend y actualmente estoy
                 participando del proyecto oracle ONE en Alura Latam.
             </p>
             <ul class="flex gap-2 font-semibold">
                 <li>
-                    <a class="flex items-center gap-1" href="https://github.com/marco-silvera" target="_blank">
+                    <a class="flex items-center text-sm md:text-base font-medium gap-1"
+                        href="https://github.com/marco-silvera" target="_blank">
                         Github
                         <img class="h-3" src="img/vector.webp" alt="Flecha">
                     </a>
                 </li>
                 <li>
-                    <a class="flex items-center gap-1" href="https://www.linkedin.com/in/marcosilvera/" target="_blank">
+                    <a class="flex items-center text-sm md:text-base font-medium gap-1"
+                        href="https://www.linkedin.com/in/marcosilvera/" target="_blank">
                         Linkedin
                         <img class="h-3" src="img/vector.webp" alt="Flecha">
                     </a>
                 </li>
                 <li>
-                    <a class="flex items-center gap-1" href="https://www.instagram.com/marko_silvera/" target="_blank">
+                    <a class="flex items-center text-sm md:text-base font-medium gap-1"
+                        href="https://www.instagram.com/marko_silvera/" target="_blank">
                         Instagram
                         <img class="h-3" src="img/vector.webp" alt="Flecha">
                     </a>
                 </li>
                 <li>
-                    <a class="flex items-center gap-1" href="CV - Silvera Uchuya Marco Antonio.pdf"
-                        download="CV-Marco-Silvera">
+                    <a class="flex items-center text-sm md:text-base font-medium gap-1"
+                        href="CV - Silvera Uchuya Marco Antonio.pdf" download="CV-Marco-Silvera">
                         CV
                         <img class="h-3" src="img/vector.webp" alt="Flecha">
                     </a>
@@ -95,14 +98,15 @@
             </ul>
         </div>
 
-        <img class="w-1/3 h-auto rounded-full" src="img/profile.webp" alt="Foto de perfil">
+        <img class="w-1/3 h-auto md:w-36 md:h-36 xl:w-[368px] xl:h-[368px] rounded-full" src="img/profile.webp"
+            alt="Foto de perfil">
     </section>
 
-    <section id="sobre-mi" class="bg-[#EAF2FD] p-4 w-full flex flex-col gap-2">
-        <h2 class="font-bold text-[22px]">
+    <section id="sobre-mi" class="bg-[#EAF2FD] p-4 md:p-8 xl:px-[152px] xl:py-16 w-full flex flex-col gap-2">
+        <h2 class="font-bold text-[22px] xl:text-[32px]">
             Sobre mi
         </h2>
-        <p class="text-sm">
+        <p class="text-sm xl:w-[750px]">
             Estudiante de último año de Ingeniería Informática de la Universidad Nacional Federico Villarreal,
             especializado en desarrollo web Front-end. He adquirido un sólido conocimiento de herramientas y
             lenguajes como Microsoft Excel, HTML, CSS y Python. A nivel básico SQL, Javascript, Microsoft Office
@@ -115,8 +119,8 @@
         <img class="object-none self-start" src="img/firma.webp" alt="Firma">
     </section>
 
-    <section id="skills" class="p-4 flex flex-col gap-2">
-        <h2 class="font-bold text-[22px] text-center">
+    <section id="skills" class="p-4 md:p-8 xl:px-[152px] flex flex-col gap-2 xl:gap-8 xl:pt-8 xl:pb-11">
+        <h2 class="font-bold text-[22px] xl:text-[32px] text-center">
             Skills
         </h2>
 
@@ -182,7 +186,7 @@
                     Bootstrap
                 </h3>
             </article>
-            <article class="h-32 p-4 bg-white flex flex-col justify-end min-w-32">
+            <article class="h-32 p-4 bg-white flex flex-col justify-end min-w-32 md:col-start-2">
                 <svg class="w-[30px]" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -211,7 +215,7 @@
                     Python
                 </h3>
             </article>
-            <article class="h-32 p-4 bg-white flex flex-col justify-end min-w-32">
+            <article class="h-32 p-4 bg-white flex flex-col justify-end min-w-32 xl:col-start-3">
                 <svg class="w-[30px]" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"
                     viewBox="0 0 256 256">
                     <path
@@ -254,8 +258,8 @@
         </section>
     </section>
 
-    <section id="hobbies" class="p-4 flex flex-col gap-2">
-        <h2 class="font-bold text-[22px] text-center">
+    <section id="hobbies" class="p-4 md:p-8 xl:px-[152px] flex flex-col gap-2 xl:gap-8 xl:pt-11 xl:pb-[88px]">
+        <h2 class="font-bold text-[22px] text-center xl:text-[32px]">
             Hobbies
         </h2>
 
@@ -281,8 +285,8 @@
         </section>
     </section>
 
-    <section id="formacion" class="bg-[#EAF2FD] p-8 flex  flex-col gap-8">
-        <h2 class="font-bold text-[22px] text-center">
+    <section id="formacion" class="bg-[#EAF2FD] p-8 xl:px-[152px] xl:py-[82px] flex  flex-col gap-8">
+        <h2 class="font-bold text-[22px] xl:text-[32px] text-center">
             Formación académica
         </h2>
         <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
@@ -334,18 +338,18 @@
         </section>
     </section>
 
-    <section id="proyectos" class="p-8 flex  flex-col gap-8">
-        <h2 class="font-bold text-[22px] text-center">
+    <section id="proyectos" class="p-8 xl:px-[152px] flex  flex-col gap-4 xl:gap-8">
+        <h2 class="font-bold text-[22px] xl:text-[32px] text-center">
             Proyectos
         </h2>
-        <section class="flex flex-col gap-16">
-            <article class="flex flex-col gap-4 min-w-[296px] max-w-[1136px]">
-                <img src="img/Proyecto-1.webp" alt="Consultoria FIEI">
-                <div class="flex flex-col gap-2">
-                    <h3 class="text-base font-bold">
+        <section class="flex flex-col xl:w-[1136px] gap-16">
+            <article class="flex flex-col xl:flex-row xl:items-center gap-4">
+                <img class="xl:w-[752px]" src="img/Proyecto-1.webp" alt="Consultoria FIEI">
+                <div class="flex flex-col gap-2 xl:w-[368px]">
+                    <h3 class="text-base xl:text-[22px  ] font-bold">
                         Consultoria FIEI
                     </h3>
-                    <p class="text-sm">
+                    <p class="text-sm xl:text-base font-medium">
                         Proyecto universitario
                     </p>
                     <div class="flex gap-4">
@@ -358,14 +362,33 @@
                     </div>
                 </div>
             </article>
-            <article class="flex flex-col gap-4">
-                <img src="img/Proyecto-2.webp" alt="Consultoria FIEI">
-                <div class="flex flex-col gap-2">
+            <article class="flex flex-col xl:flex-row-reverse xl:items-center gap-4">
+                <img class="xl:w-[752px]" src="img/Proyecto-2.webp" alt="Consultoria FIEI">
+                <div class="flex flex-col gap-2 w-full">
                     <h3 class="text-base font-bold">
-                        Consultoria FIEI
+                        Encriptador de texto
                     </h3>
                     <p class="text-sm">
-                        Proyecto universitario
+                        Primer challenge de Alura Latam
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="" class="text-sm text-[#2A7AE4] font-semibold p-4 border-2 border-[#2A7AE4]">
+                            Repositório
+                        </a>
+                        <a href="" class="text-sm text-white font-semibold p-4 bg-[#2A7AE4] border-2 border-[#2A7AE4]">
+                            Ver demo
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="flex flex-col xl:flex-row xl:items-center gap-4">
+                <img class="xl:w-[752px]" src="img/Proyecto-3.webp" alt="Consultoria FIEI">
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-base font-bold">
+                        50 Proyectos
+                    </h3>
+                    <p class="text-sm">
+                        50 proyectos en 50 días
                     </p>
                     <div class="flex gap-4">
                         <a href="" class="text-sm text-[#2A7AE4] font-semibold p-4 border-2 border-[#2A7AE4]">
@@ -380,15 +403,17 @@
         </section>
     </section>
 
-    <section id="contacto" class="bg-[#EAF2FD] p-8 flex  flex-col gap-8">
-        <img src="img/contacto.webp" class="hidden" alt="Telefono">
+    <section id="contacto"
+        class="bg-[#EAF2FD] p-8 xl:px-[152px] flex  flex-col xl:flex-row gap-8 xl:gap-4 xl:pt-32 xl:pb-16">
+        <img src="img/contacto.webp" class="hidden xl:block xl:w-[464px]" alt="Telefono">
         <div class="flex flex-col gap-8">
             <div class="flex flex-col gap-2">
-                <h2 class="font-bold text-[22px]">
+                <h2 class="font-bold text-[22px] xl:text-[32px]">
                     Contacto
                 </h2>
-                <p class="text-base">
+                <p class="text-base font-medium">
                     ¿Quieres contactarme?
+                    <br>
                     Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.
                 </p>
             </div>
@@ -405,7 +430,7 @@
     </section>
 
     <footer class="p-8">
-        <p class="text-center text-base">
+        <p class="text-center text-base font-medium">
             Desarrollado por Marco Silvera - 2024
         </p>
     </footer>
