@@ -62,9 +62,10 @@ function desencriptar(stringDesencriptado) {
     return stringDesencriptado;
 }
 
-async function copy() {
+function copy() {
     let txt = mensaje.value
-    await navigator.clipboard.writeText(txt)
+    navigator.clipboard.writeText(txt)
+    btnCopy.textContent = "Copiado!"
 }
 
 btnCopy.addEventListener('click', copy)
