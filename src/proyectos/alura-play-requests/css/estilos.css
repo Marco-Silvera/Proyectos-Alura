@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+    --azul-escuro: #154580;
+    --azul-medio: #3970BE;
+    --azul-claro: #E5F1FF;
+    --cinza-texto: #444444;
+    --cinza-claro: #ECECEC;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: var(--azul-claro);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* ESTILOS DO HEADER */
+
+.encabezado {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    padding: 0 25px;
+    z-index: 2;
+}
+
+.logo {
+    background-image: url(../img/encabezado/Logo.png);
+    background-repeat: no-repeat;
+    padding: 15px 65px;
+    cursor: pointer;
+}
+
+
+.encabezado__videos {
+    background-image: url(../img/encabezado/video_call.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+
+/* ESTILOS DA SEÇÃO VÍDEOS */
+
+.videos__container {
+    color: black;
+}
+
+.mensaje {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.mensaje__imagen {
+    width: 30%;
+}
+
+.mensaje__titulo {
+    color: var(--azul-medio);
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.buscar__input {
+    width: 260px;
+    height: 32px;
+    border: 1px solid rgb(211, 211, 211);
+    font-size: 16px;
+    padding: 3px 8px;
+    border: 1px solid rgb(211, 211, 211);
+    color: var(--azul-escuro);
+}
+
+.buscar__boton {
+    background-image: url(../img/encabezado/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgb(211, 211, 211);
+    background-color: #F9F9F9;
+    border-left: none;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.encabezado__buscar {
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width: 834px) {
+
+    body {
+        height: 100vh;
+    }
+
+}

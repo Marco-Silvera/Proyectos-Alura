@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <title>AluraPlay</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="encabezado">
+            <a class="logo" href="./index.html"></a>
+
+            <div class="encabezado__buscar">
+
+                <input type="search" placeholder="Buscar" id="buscar" class="buscar__input">
+                <button class="buscar__boton"></button>
+
+            </div>
+
+            <div class="encabezado__iconos">
+                <a href="./pages/enviar-video.html" class="encabezado__videos"></a>
+            </div>
+        </nav>
+
+    </header>
+
+    <ul class="videos__container" alt="videos alura" data-lista>
+    </ul>
+
+    <script src="js/mostrarVideos.js" type="module"></script>
+</body>
+
+</html>
