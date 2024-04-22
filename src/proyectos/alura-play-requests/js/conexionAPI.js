@@ -24,6 +24,12 @@ async function enviarVideo(titulo, descripcion, url, imagen) {
     return conexionConvertida;
 }
 
+async function buscarVideos(palabraClave) {
+    const conexion = await fetch(`http://localhost:3001/videos?q=${palabraClave}`);
+    const conexionConvertida = conexion.json();
+    return conexionConvertida
+}
+
 export const conexionAPI = {
-    listarVideos,enviarVideo
+    listarVideos, enviarVideo, buscarVideos
 }

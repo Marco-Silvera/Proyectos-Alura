@@ -18,10 +18,10 @@ function crearCard(titulo, descripcion, url, imagen) {
     return video;
 }
 
-async function listarVideos(){
+async function listarVideos() {
     const listaAPI = await conexionAPI.listarVideos()
 
-    listaAPI.forEach(video=>lista.appendChild(crearCard(video.titulo, video.descripcion, video.url, video.imagen)))
+    listaAPI.forEach(video => lista.appendChild(crearCard(video.titulo, video.descripcion, video.url, video.imagen)))
 }
 
 listarVideos();
