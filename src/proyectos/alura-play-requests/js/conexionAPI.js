@@ -29,6 +29,7 @@ async function enviarVideo(titulo, descripcion, url, imagen) {
     return conexionConvertida;
 }
 
+<<<<<<< HEAD
 async function buscarVideos(palabraClave){
     const conexion = await fetch(`http://localhost:3001/videos?q=${palabraClave}`);
     console.log(palabraClave);
@@ -38,4 +39,14 @@ async function buscarVideos(palabraClave){
 
 export const conexionAPI = {
     listarVideos,enviarVideo,buscarVideos
+=======
+async function buscarVideos(palabraClave) {
+    const conexion = await fetch(`http://localhost:3001/videos?q=${palabraClave}`);
+    const conexionConvertida = conexion.json();
+    return conexionConvertida
+}
+
+export const conexionAPI = {
+    listarVideos, enviarVideo, buscarVideos
+>>>>>>> c49bff55b924e28a5be509f519163c39df6fda3c
 }
